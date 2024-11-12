@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script>
+    function person(name,age){
+      this.name=name;
+      this.age=age;
+    }
+    function myFunc(){
+      document.getElementById("demo").innerHTML="Para changed";
+    }
+    const friend =new person("sally",10);
+    document.getElementById("sample").innerHTML=friend.name;
+  </script>
+</head>
+<body>
+    <h2 id="demo">Paragraph</h2>
+    <p id="sample"></p>
+    <button type="button" onclick="myFunc()">Press</button>
+</body>
+</html>
